@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Gyra Assistant | Home</title>
+        <link rel="stylesheet" type="text/css" href="home.css"/>
+        <link rel="icon" type="image/x-icon" href="favicon.png"/>
+    </head>
+    <body>
+        <!-- Pop Up Box | setup --
+   <div id="popup-box">
+      
+      <!-- Title --
+      <header id="popup-box-header">
+         <h2>Gyra Assistant Setup</h2>
+      </header>
+      
+      <!-- Content --
+      <div id="popup-box-content">
+         <p>Hello, I'm Gyra, your personal assistant!<br>I'm here to help you get things done, but first I need to get to know you more.</p>
+         <br>
+         <form>
+            <label>Name:  </label><input id="name-input" type="text" placeholder="Type here..." />
+            <br>
+            <br>
+            <label>Birthday:  </label><input id="birthday-input" type="date" />
+            <br>
+            <br>
+            <label>Country:  </label><input id="country-input" type="text" placeholder="Type here..." />
+            <br>
+            <br>
+            <label>State:  </label><input id="state-input" type="text" placeholder="Type here..." />
+            <br>
+            <br>
+            <label>Town:  </label><input id="town-input" type="text" placeholder="Type here..." />
+            <br>
+            <br>
+            <p class="faded-text">This information is just so you can get personalised experiences (Like weather in your town), the only data sent is to get weather forcasts, the rest of the data is stored on your browsers local storage.</p>
+            <input id="display-popup-on-load" type="checkbox">Do not show this setup again</input>
+            <br>
+            <br>
+         </form>
+      </div>
+      
+      <div id="popup-footer">
+         <button id="popup-skip" onclick="closeSetupNoSave()">Skip</button>
+         <button id="popup-submit-info" onclick="submitInfo()">Done</button>
+         
+      </div>
+   </div> -->
+
+
+        <!-- Pop Up Box | options -->
+        <div id="popup-box-options">
+            <!-- Title -->
+            <header id="popup-box-header">
+                <h2>Gyra Assistant Options</h2>
+            </header>
+            <!-- Content -->
+            <div id="popup-box-content">
+                <form>
+                    <h3 style="text-align:left;">Voice:</h3>
+                    <div>
+                        <label for="rate">Rate</label>
+                        <input type="range" min="0.5" max="2" value="1" step="0.1" id="rate">
+                        <div class="rate-value">1</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div>
+                        <label for="pitch">Pitch</label>
+                        <input type="range" min="0" max="2" value="1" step="0.1" id="pitch">
+                        <div class="pitch-value">1</div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <select></select>
+                </form>
+            </div>
+            <div id="popup-footer">
+                <button id="popup-options-submit-info" onclick="submitOptionsInfo()">Done</button>
+            </div>
+        </div>
+
+
+        
+        <!-- Main Page -->
+        <div id="assistant">
+            <h1 class="title">Gyra Assistant</h1>
+            <h3 class="title" id="version"></h3>
+            <h5 id="assistant-message"></h5>
+
+
+
+        </div>
+            <div id="inputForm">
+                
+                <input id="user-text-input" type="text" placeholder="Type here...">
+                <!--<button id="command-suggestion" onclick="CompleteCommand()">-->
+                </button>
+                <br>
+                <button id="submitCommand" onclick="processCommandInput()">Go</button>
+            </div>
+
+
+            
+            
+
+            
+        <footer id="footer">
+            <a class="footer-link" href="home.html">Home</a>
+            <a class="footer-link" href="about.html">About</a>
+            <a class="footer-link" href="commands.html">Commands</a>
+            <button class="footer-link" onclick="openOptionsPopup()">Options</button>
+            <a class="footer-link" href="help.html">Help</a>
+        </footer>
+
+        <script src="PopUps.js"></script>
+
+        <script src="text to speech.js"></script>
+        <script src="options.js"></script>
+        
+        <script src="AI.js"></script>
+        <script src="Actions.js"></script>
+        <script src="assistant-engine.js"></script>
+    </body>
+</html>
