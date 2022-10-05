@@ -1,0 +1,122 @@
+body {
+  background-color: white;
+  margin: 0px;
+  font-family: Arial;
+}
+
+.faded-text {
+  color: gray;
+  font-size: 8px;
+}
+
+#assistant {
+   text-align: center;
+   font-size: 25px;
+}
+
+.title {
+  color: #00AAFF; /* Light Blue */
+  font-family: Arial;
+  text-decoration: none;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+#assistant-message {
+  font-family: Arial;
+  margin-top: 20px;
+  padding: 0px 300px;
+}
+
+#user-text-input {
+  transition-duration: 0.4s;
+  border: 2px solid #AFAFAF;
+  border-radius: 15px;
+  font-size: 17px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  text-align: left;
+}
+
+#user-text-input:focus {
+  border: 2px solid #00AAFF;
+  padding-left: 70px;
+  padding-right: 70px;
+}
+
+#inputForm {
+  text-align: center;
+}
+
+#submitCommand {
+  text-align: center;
+}
+
+.footer-link {
+  transition-duration: 0.3s;
+  border: none;
+  border-radius: 4px;
+  background-color: inherit;
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  margin-left: 10px;
+  font-family: Arial;
+  font-size: 13px;
+}
+
+.footer-link:hover {
+  transition-duration: 0.3s; 
+  border-radius: 4px;
+  background-color: gray;
+  color: black;
+  padding: 15px 25px;
+}
+
+#footer {
+  background-color: #BFBFBF; /* Light Gray */
+  bottom: 0px;
+  position: fixed;
+  width: 100%;
+  text-align: left;
+  padding: 15px;
+}
+
+/* Command Page */
+.command h4 {
+  text-align: center;
+  color: #269BC1; /* Light Blue */
+  margin-bottom: 5px;
+}
+
+.command h6 {
+  text-align: center;
+  color: gray;
+  margin-top: 5px;
+  margin-bottom: 2px;
+}
+
+
+/* Command Suggestions */
+#command-suggestion {
+  text-align: center;
+  background-color: inherit;
+  overflow: auto;
+  width: 20%;
+  border-style: solid;
+  border-color: #b3b3b3;
+  border-radius: 5px;
+}
+
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
