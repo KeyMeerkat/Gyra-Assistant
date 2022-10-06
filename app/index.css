@@ -1,3 +1,8 @@
+/*
+
+  Main App
+
+*/
 body {
   background-color: white;
   margin: 0px;
@@ -54,6 +59,15 @@ body {
   text-align: center;
 }
 
+
+
+
+
+/*
+
+   Footer
+
+*/
 .footer-link {
   transition-duration: 0.3s;
   border: none;
@@ -84,7 +98,34 @@ body {
   padding: 15px;
 }
 
-/* Command Page */
+
+
+/*
+
+  Popups (eg. the settings popup)
+
+*/
+.popup {
+    position: absolute;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px grey;
+    background-color: #fff;
+    padding: 30px;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    top: 50%;
+    z-index: 10;
+    min-width: 150px;
+    transition-duration: 0.8s;
+}
+
+
+/*
+  
+  Command Page
+
+*/
 .command h4 {
   text-align: center;
   color: #269BC1; /* Light Blue */
