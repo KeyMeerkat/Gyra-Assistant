@@ -102,7 +102,7 @@ body {
 
 /*
 
-  Popups (eg. the settings popup)
+  Hover boxes (eg. the settings window)
 
 */
 .popup {
@@ -113,7 +113,7 @@ body {
     background-color: #fff;
     padding: 30px;
     left: 50%;
-    transform: translate(-50%, -90%);
+    transform: translate(-50%, -50%);
     top: 50%;
     z-index: 10;
     min-width: 150px;
@@ -161,3 +161,4 @@ body {
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background-color: rgba(0, 0, 0, 0.5);
+}
