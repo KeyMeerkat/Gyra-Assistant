@@ -105,7 +105,7 @@ body {
   Hover boxes (eg. the settings window)
 
 */
-.popup {
+.hoverbox {
     position: absolute;
     border: none;
     border-radius: 10px;
@@ -119,6 +119,26 @@ body {
     min-width: 150px;
     transition-duration: 0.8s;
 }
+.hoverbox-header {
+  margin-top: 0px;
+}
+
+
+/*
+
+  Custom UI stuff
+
+*/
+.button-primary {
+  background-color: #00bfff;
+  color: #fff;
+  padding: 5px;
+  border: none;
+  border-radius: 25px;
+}
+
+
+
 
 
 /*
