@@ -118,9 +118,28 @@ body {
     z-index: 10;
     min-width: 150px;
     transition-duration: 0.8s;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.hoverbox-box-header {
+  width: 100%;
+  text-align: left;
 }
 .hoverbox-header {
   margin-top: 0px;
+}
+.hoverbox-footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
 
@@ -132,9 +151,22 @@ body {
 .button-primary {
   background-color: #00bfff;
   color: #fff;
-  padding: 5px;
+  padding: 10px;
   border: none;
   border-radius: 25px;
+  padding-left: 18px;
+  padding-right: 18px;
+  font-weight: bold;
+  transition-duration: 0.3s;
+}
+
+.button-primary:focus {
+  background-color: #009bd1;
+}
+
+.button-primary:hover {
+  cursor: pointer;
+  background-color: #00b3f1;
 }
 
 
